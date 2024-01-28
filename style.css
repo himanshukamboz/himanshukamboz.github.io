@@ -124,7 +124,7 @@ main .main {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: white;
+    background-color: aquamarine;
     /* Change the background color to match your background */
     animation: myself 1s linear forwards;
 }
@@ -447,9 +447,9 @@ footer .social-media {
     }
 
     footer {
-        width: 26rem;
+        width: 27rem;
         height: 23rem;
-        margin-top: 31rem;
+        margin-top: 25rem;
     }
 
     .footer-content {
@@ -472,6 +472,6 @@ footer .social-media {
         display: none;
     }
     .hobbies h1{
-        margin: 0 0 0 6rem;
+        margin: 0 0 0 10rem;
     }
 }
