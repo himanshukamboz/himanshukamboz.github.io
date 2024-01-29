@@ -2,8 +2,10 @@
     margin: 0;
     padding: 0;
 }
-body{
-    background-color: aquamarine;
+
+body {
+    background-color:rgb(1, 1, 65);
+    color:white;
 }
 
 header nav {
@@ -17,7 +19,7 @@ header nav {
 nav img {
     width: 12vw;
     height: 11vh;
-    mix-blend-mode: darken;
+    mix-blend-mode: luminosity;
 }
 
 #simg {
@@ -36,7 +38,7 @@ nav img {
 .items ul li a {
     position: relative;
     text-decoration: none;
-    color: rgba(73, 70, 70, 0.646);
+    color: aliceblue;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.25rem;
     cursor: pointer;
@@ -49,7 +51,7 @@ nav img {
     bottom: 0;
     width: 0;
     height: 1.5px;
-    background: rgba(73, 70, 70, 0.646);
+    background:aliceblue;
     transition: width 0.3s ease;
 }
 
@@ -62,8 +64,9 @@ main {
     align-items: center;
     height: 90vh;
 }
-#h{
-    display:none;
+
+#h {
+    display: none;
 }
 
 main .main {
@@ -75,7 +78,9 @@ main .main {
 }
 
 .main button {
-    background-color: rgba(56, 61, 56, 0.945);
+    background-color: transparent;
+    color:#d7cdc1;
+    border:2px solid cornflowerblue;
     border-radius: 11px;
     margin: 15px 0;
     padding: 13px;
@@ -127,7 +132,7 @@ main .main {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: aquamarine;
+    background-color:rgb(1, 1, 65);
     /* Change the background color to match your background */
     animation: myself 1s linear forwards;
 }
@@ -153,14 +158,16 @@ main .main {
 .main img:hover {
     bottom: 78px;
 }
-.unique{
-    margin-top:10px;
+
+.unique {
+    margin-top: 10px;
 }
-.unique h1{
+
+.unique h1 {
     margin: 5rem 0 0 11rem;
     font-size: 2em;
     font-family: sans-serif;
-    color: #112525ab;
+    color: #c99995;
     padding-top: 4rem;
 }
 
@@ -178,31 +185,45 @@ main .main {
     justify-self: end;
     margin: 48px 4rem 0 0px;
 }
-.card-body{
+
+.card-body {
     background-color: aqua;
 }
-.card2{
+
+.card2 {
     justify-self: start;
-    margin-left:4rem;
+    margin-left: 4rem;
 }
-.card button{
+
+.card button {
     background-color: transparent;
+    border:2px solid cornflowerblue;
     padding: 9px;
     margin: 5% 34.5%;
     border-radius: 19px;
+    cursor: pointer;
 }
-.card button a{
+
+.card button a {
     text-decoration: none;
-    color:rgb(94 75 52);
+    color: #5b5050;
     font-weight: bold;
 }
-.card-title{
+.card button:hover{
+    border:2px solid #5b5050;
+}
+
+
+.card-title {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.3rem;
     padding-left: 0.3em;
+    color: #1a1818;
 }
-.card-text{
-    padding:0.5rem;
+
+.card-text {
+    padding: 0.5rem;
+    color:black;
 }
 
 .card-img-top {
@@ -308,35 +329,39 @@ main .main {
     margin: 1rem 0 0 6rem;
     font-family: sans-serif;
     font-weight: bolder;
-    color: #112525ab;
+    color: #c99995;
     padding-bottom: 3rem;
 }
-.hobbies h1{
+
+.hobbies h1 {
     margin: 4rem 0 0 11rem;
     font-size: 2em;
     font-family: sans-serif;
-    color: #112525ab;
+    color: #c99995;
     padding-top: 4rem;
 }
 
-.fhobby{
-    margin:1rem;
+.fhobby {
+    margin: 1rem;
     display: flex;
-    height:70vh;
-    width:96%;
+    height: 70vh;
+    width: 96%;
 }
-.col-sm-3{
+
+.col-sm-3 {
     font-size: 2em;
     margin: 0.2em;
     font-family: system-ui;
     color: burlywood;
 }
-.col-sm-9{
+
+.col-sm-9 {
     font-size: 1.1em;
     font-family: math;
     margin-left: 3.5em;
 }
-.align{
+
+.align {
     height: 23rem;
     border-radius: 54%;
     border: 4px solid white;
@@ -348,6 +373,7 @@ footer {
     height: 28vh;
     background-color: grey;
     margin-top: 10px;
+    color:black;
 }
 
 .footer-content {
@@ -389,6 +415,10 @@ footer .social-media {
 
 
 @media screen and (max-width: 485px) {
+    html {
+        width: 100vw;
+    }
+
     header nav {
         flex-direction: column;
         align-items: flex-start;
@@ -430,13 +460,15 @@ footer .social-media {
         width: 26rem;
         display: grid;
         gap:6em;
+
     }
-     #h {
+
+    #h {
         display: block;
         padding: 2rem 0 0 9rem;
         font-size: 2em;
         font-family: sans-serif;
-        color: #112525ab;
+        color:#c99995;
     }
 
     main .main {
@@ -449,7 +481,8 @@ footer .social-media {
     .myself span {
         font-size: 15px;
     }
-     .myself button {
+
+    .myself button {
         padding: 0.444em;
         font-size: 16px;
     }
@@ -465,8 +498,8 @@ footer .social-media {
     }
 
     footer {
-        width: 27rem;
-        height: 24rem;
+        width: 26rem;
+        height: 23rem;
         margin-top: 25rem;
     }
 
@@ -478,18 +511,22 @@ footer .social-media {
     .social-media {
         margin-left: 1rem;
     }
-    .projects{
+
+    .projects {
         display: grid;
         grid-template-columns: 1fr;
     }
-    .unique h1{
+
+    .unique h1 {
         position: relative;
         right: 29px;
     }
-    .align{
+
+    .align {
         display: none;
     }
-    .hobbies h1{
-        margin: 0 0 0 10rem;
+
+    .hobbies h1 {
+        margin: 0 0 0 6rem;
     }
 }
