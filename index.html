@@ -2,19 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>PORTFOLIO</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="nav-visible">
+    <header class="nav-visible" id="c1">
         <img src="hamburger-icon-png-11.jpg" id="simg">  
         <nav>
             <img src="logo.png" id="fimg">   
              
             <div class="items">
                 <ul>
-                <li><a href="#c1">Home</a></li>  
+                <li><a href="/portfolio.html">Home</a></li>  
                 <li><a href="#c2">Projects</a></li>  
                 <li><a href="#c3">Skills</a></li>  
                 <li><a href="#c5">Hobbies</a></li>  
@@ -23,7 +23,7 @@
             </div>
         </nav>
     </header>
-    <main id="c1">
+    <main>
         <h1 id="h"><u>About:</u></h1>
         <div class="main">
             <div class="myself">
@@ -36,6 +36,7 @@
             <img src="Himanshu_30_B.C.A.png">
         </div>
     </main>
+    <div class="seperation"></div>
     <section id ="c2" class="unique">
         <h1><u>Projects:</u></h1>
     <div class="projects">
@@ -53,10 +54,11 @@
                   <h3 class="card-title">Portfolio</h3>
                   <p class="card-text"> This project has enhanced my skills in software development, providing a solid foundation for future programming endeavors."</p>
                 </div>
-                  <button><a href="https://github.com/himanshukamboz/himanshukamboz.github.io" class="card-link">View Code</a></button>
+                  <button><a href="https://github.com/himanshukamboz/HotelManagementSystem/blob/master/Hotel%20Management%20System.cpp" class="card-link">View Code</a></button>
                 </div>
                 </div>
     </section>
+    <div class="seperation"></div>
     <div id="c3" class="skills">
         <h1><u>Skills:</u></h1>
         <div class="c">
@@ -84,6 +86,7 @@
             </div>
         </div>
     </div>
+    <div class="seperation"></div>
     <section class="hobbies" id="c5">
         <h1><u>Hobbies:</u></h1>
         <div class="fhobby">
@@ -131,7 +134,13 @@
     </footer>
     
    
-   <script src="index.js"></script>
+    <script>
+       
+        document.getElementById('simg').addEventListener('click', function() {
+            // Toggle the class to show/hide the navigation
+            document.querySelector('header').classList.toggle('nav-visible');
+        });
+    </script>
     
 </body>
 </html>
