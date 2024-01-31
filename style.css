@@ -1,4 +1,5 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -6,6 +7,11 @@
 body {
     background-color:rgb(1, 1, 65);
     color:white;
+}
+.seperation{
+    width:100%;
+    height:2px;
+    background-color: #d7cdc1;
 }
 
 header nav {
@@ -70,8 +76,8 @@ main {
 }
 
 main .main {
-    height: 25rem;
-    width: 70rem;
+    height: 26rem;
+    width: 77rem;
     margin-left: 50px;
     display: flex;
     justify-content: space-between;
@@ -150,8 +156,8 @@ main .main {
 .main img {
     height: 27rem;
     position: relative;
-    bottom: 56px;
-    left: 33px;
+    bottom: 28px;
+    left: 1px;
     transition: bottom 1s ease;
 }
 
@@ -161,6 +167,8 @@ main .main {
 
 .unique {
     margin-top: 10px;
+    width: 100%;
+    height: 92vh;
 }
 
 .unique h1 {
@@ -198,7 +206,7 @@ main .main {
 .card button {
     background-color: transparent;
     border:2px solid cornflowerblue;
-    padding: 9px;
+    padding: 8px;
     margin: 5% 34.5%;
     border-radius: 19px;
     cursor: pointer;
@@ -238,6 +246,7 @@ main .main {
     display: flex;
     flex-direction: column;
     margin: 9rem 0 0 5rem;
+    
 }
 
 .c {
@@ -448,7 +457,7 @@ footer .social-media {
 
     .items ul {
         flex-direction: column;
-        margin: 66px 10px;
+        margin: 59px 10px;
     }
 
     .nav-visible nav {
@@ -457,7 +466,7 @@ footer .social-media {
 
     main {
         height: 27rem;
-        width: 26rem;
+        width: 100%;
         display: grid;
         gap:6em;
 
@@ -465,21 +474,25 @@ footer .social-media {
 
     #h {
         display: block;
-        padding: 2rem 0 0 9rem;
-        font-size: 2em;
+        padding: 2rem 0 ;
+        font-size: 1em 0 0 0;
         font-family: sans-serif;
         color:#c99995;
+        text-align: center;
     }
 
     main .main {
         margin: -1rem 0 0 -4rem;
         height: 17rem;
-        width: 26rem;
+        width: 100%;
     }
-
+   
+.myself{
+    margin:4rem 0 0 5rem;
+}
 
     .myself span {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .myself button {
@@ -490,7 +503,16 @@ footer .social-media {
     .main img {
         width: 190px;
         height: 261px;
-        bottom: 10px;
+        bottom: 35px;
+        left: 27px;
+    }
+    .skills{
+        margin: 2rem 0 0 0;
+    }
+    .skills h1{
+        text-align: center;
+        margin: 1em 0;
+        padding:0;
     }
 
     .cssskill {
@@ -498,9 +520,10 @@ footer .social-media {
     }
 
     footer {
-        width: 26rem;
+        width: 100%;
         height: 23rem;
         margin-top: 25rem;
+    
     }
 
     .footer-content {
@@ -512,21 +535,34 @@ footer .social-media {
         margin-left: 1rem;
     }
 
+    .unique{
+        height:195vh;
+    }
     .projects {
+        width: 100%;
         display: grid;
         grid-template-columns: 1fr;
+        justify-content: center;
+
     }
+   
+   
+    
 
     .unique h1 {
-        position: relative;
-        right: 29px;
+        margin: 0;
+       text-align: center;
     }
 
     .align {
         display: none;
     }
+    .col-sm-9{
+        margin:0 0.2em 0 0.5em;
+    }
 
     .hobbies h1 {
-        margin: 0 0 0 6rem;
+        margin:0;
+        text-align: center;
     }
 }
