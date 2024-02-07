@@ -298,11 +298,6 @@ main .main {
     gap: 27px;
     align-items: center;
 }
-
-.html img {
-    mix-blend-mode: color;
-}
-
 .html .htmlskill {
     width: 76vw;
     height: 1rem;
