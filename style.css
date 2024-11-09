@@ -238,7 +238,8 @@ main .main {
 .card-img-top {
     width: 100%;
     height: 52%;
-    border-radius: 10px;
+    border-radius: 23px;
+    mix-blend-mode: darken;
 }
 
 
@@ -248,90 +249,48 @@ main .main {
     margin: 9rem 0 0 5rem;
 
 }
+.skillcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    justify-content: space-between;
+}
+.skillcontainer>div{
+    margin: auto;
+}
+.skillcontainer>div>img{
+    height: 200px;
+}
 
 .c {
-    padding: 30px;
+   
     display: flex;
     gap: 30px;
     align-items: center;
 }
 
-.c .cskill {
-    width: 76vw;
-    height: 1rem;
-    border: 2px solid rgba(140, 23, 23, 0.792);
-    border-radius: 23%;
-}
-
-.c .cskill div {
-    width: 80%;
-    height: 100%;
-    background-color: rgb(69, 69, 116);
-    border-radius: 27%;
-
-}
 
 .c_plus {
-    padding: 30px;
+    
     display: flex;
     gap: 30px;
     align-items: center;
-}
-
-.c_plus .c_plusskill {
-    width: 76vw;
-    height: 1rem;
-    border: 2px solid rgba(140, 23, 23, 0.792);
-    border-radius: 23%;
-}
-
-.c_plus .c_plusskill div {
-    width: 70%;
-    height: 100%;
-    background-color: rgb(69, 69, 116);
-    border-radius: 27%
 }
 
 .html {
-    padding: 30px;
+    
     display: flex;
     gap: 27px;
     align-items: center;
 }
-.html .htmlskill {
-    width: 76vw;
-    height: 1rem;
-    border: 2px solid rgba(140, 23, 23, 0.792);
-    border-radius: 23%;
-}
-
-.html .htmlskill div {
-    width: 100%;
-    height: 100%;
-    background-color: rgb(69, 69, 116);
-    border-radius: 27%;
-}
 
 .css {
-    padding: 30px;
+    
     display: flex;
     gap: 39px;
     align-items: center;
 }
 
-.css .cssskill {
-    width: 76vw;
-    height: 1rem;
-    border: 2px solid rgba(140, 23, 23, 0.792);
-    border-radius: 23%;
-}
-
-.css .cssskill div {
-    width: 95%;
-    height: 100%;
-    background-color: rgb(69, 69, 116);
-    border-radius: 27%;
-}
 
 .skills h1 {
     margin: 1rem 0 0 6rem;
@@ -512,6 +471,10 @@ footer .social-media {
 
     .skills {
         margin: 2rem 0 0 0;
+    }
+    .skillcontainer{
+        align-items: center;
+        justify-content: center;
     }
 
     .skills h1 {
